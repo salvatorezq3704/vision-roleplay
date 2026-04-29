@@ -40,3 +40,25 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Add Vision Roleplay logo background */
+header {
+    position: relative;
+}
+
+/* Logo background in header */
+header .logo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+/* Ensure other header content appears above logo */
+header > *:not(.logo-bg) {
+    position: relative;
+    z-index: 1;
+}
